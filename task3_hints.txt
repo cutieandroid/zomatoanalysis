@@ -1,0 +1,11 @@
+delete null values of name column as name is the primary identifier of the dataset
+replace null values of online order with NA
+replace null values of book_table with NA
+replace null values of rating to zero as it is a numerical datatype
+replace null values of votes to zero as it is a numerical datatype
+replace null values of location to NA
+replace null values of rest_type to NA
+replace null values of dishliked to NA
+replace null values of cuisines to NA
+replace null values of approxcost to 0 as it is a numerical value
+replace null values of type to NA

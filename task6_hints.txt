@@ -1,0 +1,6 @@
+online order table should have only yes and no because it is necessary to have the online order as yes or no only for zomato to perform further analysis, remove other values
+
+check for rating table and remove NEW,- values to 0 and remove /5 as rating column should only contain decimal values
+
+
+   

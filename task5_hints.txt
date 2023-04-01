@@ -1,0 +1,2 @@
+we have irrelevant reviews like string eg(RATED,Rated) in our name,online_order etc columns
+remove this irrelevant text from all the columns
