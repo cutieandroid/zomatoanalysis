@@ -75,7 +75,7 @@ hotels.info()
 
 #we have irrelevant reviews like string(RATED,Rated) in our name,online_order etc columns
 #removing irrelevant text from all the columns
-'''
+
 filtered_hotels=hotels[hotels['name'].str.contains('RATED|Rated')==False]
 filtered_hotels1=filtered_hotels[filtered_hotels['type'].str.contains('RATED|Rated')==False]
 filtered_hotels2=filtered_hotels1[filtered_hotels1['approx_cost'].str.contains('RATED|Rated')==False]
@@ -120,7 +120,7 @@ filtered_hotels10.to_csv('zomatocleaned_v1.csv')
 
 
 
-'''
+
 
 
 
