@@ -1,0 +1,18 @@
+7.
+select name, rating, votes, online_order from zomato where rating>3 and votes>=150 and online_order='No' order by votes desc limit 15
+
+6.select name,dish_liked,rating,votes from zomato where online_order='Yes'and type='Delivery' and rating in (select max(rating) from zomato where online_order='Yes' and type='Delivery') order by votes desc limit 1
+
+5.select type,count(type) as number_of_restaurants,sum(votes) as total_votes,avg(rating)as avg_rating from zomato group by type order by total_votes DESC limit 1,10
+
+4.select sum(votes) total_votes,online_order from zomato group by online_order
+3.set @mincost= (select rating from zomato where location='Indiranagar' and approx_cost =(select min(approx_cost) from zomato where location='Indiranagar') limit 1);
+
+set @maxcost=(select rating from zomato where location='Indiranagar' and approx_cost = (select max(approx_cost) from zomato where location='Indiranagar') limit 1 );
+
+select @mincost as rating1,@maxcost as rating2;
+2.
+select name, rating,location,type from zomato where location='Banashankari'and type='Delivery' order by rating desc limit 5
+
+
+1.select name, votes, rating from zomato where type='Delivery' order by votes desc limit 5 
